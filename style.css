@@ -548,3 +548,14 @@ body {
   touch-action: manipulation;
 }
 .hidden { display: none !important; }
+.hidden { 
+  display: none !important; 
+}
+
+#loginPage, #dashboardPage {
+  display: block;
+}
+
+#loginPage.hidden, #dashboardPage.hidden {
+  display: none !important;
+}
