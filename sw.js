@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pgm-kbb-v1'; // Ganti v1 jadi v2, v3 tiap update
+const CACHE_NAME = 'pgm-kbb-v2'; // Ganti v1 jadi v2, v3 tiap update
 
 const urlsToCache = [
   '/',
