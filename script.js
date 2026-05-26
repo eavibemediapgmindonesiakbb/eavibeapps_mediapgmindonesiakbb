@@ -1,6 +1,11 @@
 // ====== CONFIG - GANTI URL INI ======
 const URL_APPS_SCRIPT = 'https://script.google.com/macros/s/AKfycbyJDyDWkjYwvSd7PgTwqdIrhC5J1zYa-2pv0ivCFxATXgVQWyE2C4Zk33ZMt-o0jrxrTg/exec';
-
+// ====== HIDE SPLASH SCREEN ======
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('splashScreen').style.display = 'none';
+  }, 1000);
+});
 // ====== UTILITY ======
 function showToast(message, type = 'success') {
   const toast = document.getElementById('toast');
