@@ -1,17 +1,21 @@
-const CACHE_NAME = 'pgm-kbb-v1';
+const CACHE_NAME = 'pgm-kbb-v2';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/script.js',
-  '/assets/logo-pgm.png',
-  '/assets/masjid-bg.svg'
+  './',
+  './index.html',
+  './style.css',
+  './script.js',
+  './manifest.json',
+  './assets/logo-pgm.png',
+  './assets/masjid-bg.svg'
 ];
 
 self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
-  );
+  self.skipWaiting();
+  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache)));
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil(self.clients.claim());
 });
 
 self.addEventListener('fetch', event => {
