@@ -6,7 +6,7 @@
   <title>PGM KBB - Anggota</title>
   
   <!-- PWA -->
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.json?v=1">
   <meta name="theme-color" content="#0d6efd">
   <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
   
@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=1">
 </head>
 <body>
   <!-- Splash Screen -->
@@ -32,18 +32,18 @@
       <p class="subtitle">Masukkan NIK yang terdaftar di PGM KBB</p>
       
       <form id="loginForm">
-  <div class="input-group">
-    <i class="fas fa-id-card"></i>
-    <input type="text" id="nik" placeholder="Masukkan NIK Anda" required>
-  </div>
-  <div class="input-group">
-    <i class="fas fa-lock"></i>
-    <input type="password" id="password" placeholder="Masukkan NIK lagi" required>
-  </div>
-  <button type="submit" class="btn-login">
-    <i class="fas fa-sign-in-alt"></i> Masuk
-  </button>
-</form>
+        <div class="input-group">
+          <i class="fas fa-id-card"></i>
+          <input type="text" id="nik" placeholder="Masukkan NIK Anda" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="password" placeholder="Masukkan NIK lagi" required>
+        </div>
+        <button type="submit" class="btn-login">
+          <i class="fas fa-sign-in-alt"></i> Masuk
+        </button>
+      </form>
     </div>
   </div>
 
@@ -99,6 +99,6 @@
   <!-- Toast Notifikasi -->
   <div id="toast" class="toast hidden"></div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=1"></script>
 </body>
 </html>
