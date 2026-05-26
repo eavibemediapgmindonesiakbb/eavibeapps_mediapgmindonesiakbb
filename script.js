@@ -124,3 +124,7 @@ function showToast(message, type = 'success') {
     toast.classList.add('hidden');
   }, 3000);
 }
+// Daftarin Service Worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
