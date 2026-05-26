@@ -1,12 +1,16 @@
 const URL_APPS_SCRIPT = 'https://script.google.com/macros/s/AKfycbyJDyDWkjYwvSd7PgTwqdIrhC5J1zYa-2pv0ivCFxATXgVQWyE2C4Zk33ZMt-o0jrxrTg/exec';
 
-// Hilangin splash screen setelah 1 detik
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    const splash = document.getElementById('splashScreen');
-    if (splash) splash.style.display = 'none';
-  }, 1000);
-});
+// Tunggu halaman kelar load
+window.onload = () => {
+  // Paksa hide splash
+  document.getElementById('splashScreen').style.display = 'none';
+  
+  // Paksa munculin login
+  document.getElementById('loginPage').classList.remove('hidden');
+  document.getElementById('dashboardPage').classList.add('hidden');
+  
+  console.log('Login page harusnya muncul sekarang');
+};
 
 // Cek login pas buka app
 document.addEventListener('DOMContentLoaded', () => {
