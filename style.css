@@ -98,8 +98,9 @@ body {
 .logo {
   width: 80px;
   margin-bottom: 16px;
-  background: transparent !important; /* ini yang penting */
-  border-radius: 12px; /* opsional biar gak kaku kalau ada sisa pixel */
+  background: transparent !important;
+  mix-blend-mode: darken; /* ini ngilangin putih, ganti ke multiply buat ngilangin hitam */
+  mix-blend-mode: multiply !important; /* pake ini buat hajar background hitam */
 }
 
 .login-header h1 {
