@@ -65,35 +65,30 @@ body {
 
 /* LOGIN PAGE */
 .page {
-  min-height: 100vh;
+  min-height: 100dvh; /* Ganti vh jadi dvh biar pas di HP */
   animation: fadeIn 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Biar card di tengah layar */
 }
 
 .login-bg {
   position: fixed;
   inset: 0;
-  background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 60%);
+  background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%);
   z-index: -1;
+  min-height: 100dvh;
 }
-
-.login-bg::after {
-  content: '';
-  position: absolute;
-  bottom: 40%;
-  left: 0;
-  right: 0;
-  height: 200px;
-  background: url('assets/masjid-bg.svg') center bottom no-repeat;
-  background-size: contain;
-  opacity: 0.3;
-}
-
-.login-container {
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 32px 20px 40px;
-}
-
 .login-header {
   text-align: center;
   margin-bottom: 32px;
