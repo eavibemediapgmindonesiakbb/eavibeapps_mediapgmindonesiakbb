@@ -1,5 +1,5 @@
 // ====== CONFIG - GANTI URL INI ======
-const URL_APPS_SCRIPT = 'https://script.google.com/macros/s/PASTE_URL_DEPLOYMENT_KAMU_DISINI/exec';
+const URL_APPS_SCRIPT = 'https://script.google.com/macros/s/AKfycbyJDyDWkjYwvSd7PgTwqdIrhC5J1zYa-2pv0ivCFxATXgVQWyE2C4Zk33ZMt-o0jrxrTg/exec';
 
 // ====== UTILITY ======
 function showToast(message, type = 'success') {
