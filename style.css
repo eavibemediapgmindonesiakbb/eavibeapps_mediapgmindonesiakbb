@@ -547,3 +547,4 @@ th {
 body {
   touch-action: manipulation;
 }
+.hidden { display: none !important; }
